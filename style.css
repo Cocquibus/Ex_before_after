@@ -1,0 +1,71 @@
+h1::after, h1::before{
+    content: ' ';
+    position: absolute;
+}
+/*EXO 1*/
+#exo1 h1::after{
+    background-color:red;
+    height:2px;
+    width:0px;
+    margin-top: 25px;
+    margin-left: -57px;
+    transition: 2s;
+}
+#exo1 h1:hover::after{
+    width:56px;
+}
+/*EXO 2*/
+#exo2 h1::after{
+    background-color:red;
+    height:2px;
+    width:0px;
+    margin-top: 25px;
+    margin-left: -29px;
+    transition: 2s;
+}
+#exo2 h1:hover::after{
+    width:56px;
+    margin-left: -58px;
+}
+/*EXO 3*/
+#exo3 h1::after{
+    z-index: -1;
+    background-color:red;
+    height:2px;
+    width:56px;
+    margin-top: 25px;
+    margin-left: -57px;
+    top:10;
+    transition: 2s;
+}
+#exo3 h1:hover::after{
+    height:30px;
+    margin-top: -5px;
+}
+/*EXO 4*/
+#exo4 h1::before, #exo4 h1::after{
+    width: 0px;
+    height: 0px;
+}
+#exo4 h1::before{
+    transition: width 1s, height 1s 1s;
+}
+#exo4 h1::after{
+    transition: width 1s 2s, height 1s 3s, margin-left 1s 2s, margin-top 1s 3s;
+    margin-top: 25px;
+    margin-left: -2px;
+}
+#exo4 h1:hover::before, #exo4 h1:hover::after{
+    width: 56px;
+    height: 25px;
+}
+#exo4 h1:hover::before{
+    border-top: 2px solid red;
+    border-right: 2px solid red;
+}
+#exo4 h1:hover::after{
+    border-bottom: 2px solid red;
+    border-left: 2px solid red;
+    margin-left: -58px;
+    margin-top: 0px;
+}
